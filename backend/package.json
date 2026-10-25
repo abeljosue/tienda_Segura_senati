@@ -1,0 +1,26 @@
+{
+  "name": "tienda-backend",
+  "version": "1.0.0",
+  "description": "API segura con JWT, CORS, Helmet y consultas parametrizadas",
+  "main": "server.js",
+  "scripts": {
+    "start": "node --env-file=.env --disable-warning=ExperimentalWarning server.js",
+    "dev": "node --watch --env-file=.env --disable-warning=ExperimentalWarning server.js",
+    "probar": "node probar.mjs"
+  },
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "keywords": ["jwt", "cors", "sqlite", "seguridad"],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "escape-html": "^1.0.3",
+    "express": "^5.3.0",
+    "helmet": "^8.3.0",
+    "jsonwebtoken": "^9.0.3"
+  }
+}
